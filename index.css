@@ -1,0 +1,41 @@
+import React from 'react';
+import AppLogo from '@/components/ui/AppLogo';
+
+export default function Footer() {
+  return (
+    <footer className="border-t border-border bg-background">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 py-16 flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
+        {/* Left: Logo + tagline */}
+        <div className="flex flex-col gap-3">
+          <div className="flex items-center gap-2.5">
+            <AppLogo size={32} />
+            <span className="font-display text-lg font-semibold text-foreground">Elwords Medical Writing Academy</span>
+          </div>
+          <p className="text-sm text-muted-foreground max-w-xs leading-relaxed">
+            Bridging academic knowledge to industry-ready medical writing careers.
+          </p>
+        </div>
+
+        {/* Right: Links */}
+        <div className="flex flex-wrap gap-x-8 gap-y-3">
+          <a href="#program" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Program</a>
+          <a href="#faculty" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Faculty</a>
+          <a href="#curriculum" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Curriculum</a>
+          <a href="#register" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Enroll</a>
+          <a href="mailto:selvastine.selvaraj@gmail.com" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+        </div>
+      </div>
+
+      {/* Bottom bar */}
+      <div className="border-t border-border">
+        <div className="max-w-7xl mx-auto px-6 md:px-10 py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
+          <p className="text-xs text-muted-foreground">© 2026 Elwords Medical Writing Academy. All rights reserved.</p>
+          <div className="flex gap-6">
+            <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a>
+            <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

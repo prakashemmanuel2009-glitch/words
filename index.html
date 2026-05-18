@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elwords Medical Writing Academy and Consulting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Elwords Medical Writing Academy and Consulting</h1>
+      <p class="tagline">Building the next generation of medical writers in India and globally through practical training, mentorship, and industry experience.</p>
+      <p>
+        Practical training, mentorship, and consulting for aspiring medical writing professionals.
+      </p>
+      <div class="hero-image-grid">
+        <img
+          src="https://images.unsplash.com/photo-1582719478185-2197f8db4a0f?auto=format&fit=crop&w=1200&q=80"
+          alt="Medical writing and research workspace">
+        <img
+          src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80"
+          alt="Healthcare and pharmaceutical research concept">
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Leadership Team</h2>
+      <div class="grid two">
+        <article>
+          <h3>Founder, Trainer & Consultant</h3>
+          <p><strong>Selvastine Selvaraj, DVM, MVSc</strong></p>
+        </article>
+        <article>
+          <h3>Mentor & Expert Consultant</h3>
+          <p><strong>Dr Adesh Saxena, PhD</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Academy Training Areas</h2>
+      <div class="grid two">
+        <div>
+          <ol>
+            <li><strong>Preclinical Writing:</strong> PK-PD, toxicology, and CMC sections</li>
+            <li><strong>Clinical Writing:</strong> CSR, CSP, ICF, IB, CTD overview and summary sections</li>
+            <li><strong>Safety Writing:</strong> PSUR, DSUR, RMP, PADER, patient narratives, product label</li>
+            <li><strong>Publications Writing:</strong> manuscripts, abstracts, posters, slide decks</li>
+            <li><strong>Patient/Public Writing:</strong> lay summaries and medical information in simple English</li>
+          </ol>
+          <p class="subtle">
+            Coverage includes new chemical entities, generics, biologics, biosimilars,
+            and medical devices.
+          </p>
+        </div>
+        <div class="image-wrap">
+          <h3>eCTD (Public-Domain Images)</h3>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/CTD_triangle.svg"
+            alt="eCTD triangle diagram from Wikimedia Commons">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/CTD_triangle.svg/512px-CTD_triangle.svg.png"
+            alt="eCTD triangle rendered image from Wikimedia Commons">
+          <p class="subtle">
+            Source: Wikimedia Commons (publicly accessible)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Our Learning Environment</h2>
+      <p class="subtle">
+        Real-world project style training, mentoring, and consulting support for learners and professionals.
+      </p>
+      <div class="photo-gallery">
+        <img
+          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80"
+          alt="Medical research team discussing documents">
+        <img
+          src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?auto=format&fit=crop&w=1200&q=80"
+          alt="Scientist reviewing clinical data charts">
+        <img
+          src="https://images.unsplash.com/photo-1581092919535-7146ff1a5908?auto=format&fit=crop&w=1200&q=80"
+          alt="Medical professional presenting to students">
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Participant Registration (CRUD)</h2>
+      <form id="participantForm">
+        <input type="hidden" id="participantId">
+        <div class="grid two">
+          <label>First Name
+            <input type="text" id="firstName" required>
+          </label>
+          <label>Last Name
+            <input type="text" id="lastName" required>
+          </label>
+          <label>Country
+            <input type="text" id="country" required>
+          </label>
+          <label>City
+            <input type="text" id="city" required>
+          </label>
+
+          <label>Educational Background
+            <select id="educationLevel" required>
+              <option value="">Select level</option>
+              <option>Bachelors</option>
+              <option>Masters</option>
+              <option>PhD</option>
+            </select>
+          </label>
+
+          <label>Course Related to Life Science
+            <select id="course" required>
+              <option value="">Select course</option>
+              <option>Biology</option>
+              <option>Pharmacology</option>
+              <option>MBBS</option>
+              <option>Biotechnology</option>
+              <option>Microbiology</option>
+              <option>Biochemistry</option>
+              <option>Other Life Science Course</option>
+            </select>
+          </label>
+        </div>
+
+        <fieldset>
+          <legend>Current Status</legend>
+          <label><input type="radio" name="employmentStatus" value="Fresher looking for a job" required> Fresher looking for a job</label>
+          <label><input type="radio" name="employmentStatus" value="Employed"> Employed</label>
+        </fieldset>
+
+        <div class="actions">
+          <button type="submit" id="saveBtn">Create Participant</button>
+          <button type="button" id="cancelEditBtn" class="secondary hidden">Cancel Edit</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Registered Participants</h2>
+      <div class="table-wrap">
+        <table id="participantsTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Country</th>
+              <th>City</th>
+              <th>Education</th>
+              <th>Course</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Elwords Medical Writing Academy & Consulting</p>
+    <p><a href="mailto:elwords@gmail.com">elwords@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
